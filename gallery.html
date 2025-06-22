@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>TAPLI</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/section.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section class="portfolio-header" id="header">
+    <nav class="navbar navbar-default _navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                  aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">TAPLI</a>
+        </div>
+        <div class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index-multipage.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="awards.html">awards</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Breadcumb -->
+  <section class="section-background">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index-multipage.html">Home</a></li>
+        <li class="active">Gallery</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <section class="portfolio" id="portfolio">
+    <div class="container section-wrapper">
+      <h2 class="section-title black">portfolio</h2>
+      <div class="underline purple"></div>
+
+      <div class="row gallery">
+        <!-- Kart 1 -->
+        <div class="col-sm-4 col-xs-6 photo-card">
+          <img src="assets/images/image1.jpg"
+               alt="Portföy 1"
+               onclick="openModal(this)">
+          <div class="photo-info">
+          	<p>Erzincan-Kemah</p>
+            <p>39°37'46.4"N 39°13'51.6"E</p>
+            <p>
+              <a href="https://maps.app.goo.gl/DyDykGTUcMPkBxxs5"
+                 target="_blank"
+                 rel="noopener">
+                View on map
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Kart 2 -->
+        <div class="col-sm-4 col-xs-6 photo-card">
+          <img src="assets/images/image2.png"
+               alt="Portföy 2"
+               onclick="openModal(this)">
+          <div class="photo-info">
+            <p>İstanbul-Rumeli Kasrı</p>
+            <p>41°10'34.4"N 29°04'22.4"E</p>
+            <p>
+              <a href="https://maps.app.goo.gl/JHqCcShjiLJ11inw7"
+                 target="_blank"
+                 rel="noopener">
+                View on map
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Kart 3 -->
+        <div class="col-sm-4 col-xs-6 photo-card">
+          <img src="assets/images/image3.jpg"
+               alt="Portföy 3"
+               onclick="openModal(this)">
+          <div class="photo-info">
+            <p>Antalya-Side Ancient City</p>
+            <p>36°45'51.8"N 31°23'10.8"E</p>
+            <p>
+              <a href="https://maps.app.goo.gl/E8vUNK661WSUKv9d6"
+                 target="_blank"
+                 rel="noopener">
+                View on map
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Yeni kart eklemek için aynı yapıyı kopyalayın -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Tam Ekran -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Büyütülmüş Görsel">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="copy">
+            Copyright &copy; 2015 Your Company
+          </div>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div class="social-icon">
+            <a href="#"><div class="icon fb"><i class="ion-social-facebook"></i></div></a>
+            <a href="#"><div class="icon twitter"><i class="ion-social-twitter"></i></div></a>
+            <a href="#"><div class="icon google"><i class="ion-social-googleplus"></i></div></a>
+            <a href="#"><div class="icon rss"><i class="ion-social-rss"></i></div></a>
+          </div>
+        </div>
+        <div class="col-sm-4 text-right">
+          <div class="copy">
+            Theme by <a href="http://www.themewagon.com">themewagon.com</a>. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/jquery-1.11.2.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    function openModal(img) {
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modal-img');
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+    }
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+.section-background{
+	background: url('../images/portfolio.png');
+}
+
+.section-item-detail {
+	color: #000;
+	font-weight: bold;
+}
